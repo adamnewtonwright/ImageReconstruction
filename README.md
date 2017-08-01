@@ -6,7 +6,7 @@ PhaseRetrieval.m is an algorithm taken from Gonsalves, 1982, "Phase Retrieval an
 
 JointEstimate.m is also taken from Gonsalves' paper. It utilizes the same concept at PhaseRetrieval, but is slightly more advanced and is aimed at reconstructing an image that is aberrated. It first creates an object, and then "images" it with some amount of aberration; we mostly looked at defocus aberration in our simulation. It then creates another image that has an a priori amount of additionaly aberration (we knew how much more defocused the second image was). Using this, it generates a point spread function to match each image, and then reconstructs the image to one without aberration.
 
-These two algorithms use a slightly modified steepest descent algorithm to minimize an error metric between the observed and estimated quantities.
+These two algorithms use a slightly modified steepest descent algorithm to minimize an error metric between the observed and estimated quantities. The error metric is dependent upon the coefficients of the zernike polynomials, which can end up being a large parameter space.
 
 zernikeps.m is just a function that calculates the zernike polynomials as a matrix.
 
