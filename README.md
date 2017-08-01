@@ -1,5 +1,5 @@
 # ImageReconstruction
-A repository of code for understanding simple phase retrieval and image reconstruction 
+A repository of MATLAB code for understanding simple phase retrieval and image reconstruction 
 algorithms as well as extracting the point spread functions of real data.
 
 PhaseRetrieval.m is an algorithm taken from Gonsalves, 1982, "Phase Retrieval and diversity in Adaptive Optics." It is intended to extract the phase of an observed point spread function. It creates a point spread function that is aberrated by some amount using Zernike polynomials, and then runs a loop to minimize the error between the observed point spread function and an estimated point spread function.
